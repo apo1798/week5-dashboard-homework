@@ -1,3 +1,5 @@
-$(function() {
-  console.log('Hello Bootstrap5');
-});
+document
+  ?.querySelector('.side-navigation')
+  ?.querySelector('.active-link')
+  ?.querySelector('a')
+  .classList.remove('text-black');

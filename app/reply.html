@@ -1,0 +1,314 @@
+---
+title: Assignment Center
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container-xl min-vh-100">
+  <div class="row">
+    <nav
+      class="col-3 min-vh-100 bg-light px-0 d-flex flex-column justify-content-between"
+    >
+      <div class="p-32px">
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo-ANSWER.svg"
+            alt="Answer Icon"
+            class="mb-4"
+          />
+        </a>
+        <ul class="list-unstyled side-navigation">
+          <li class="mb-4">
+            <a
+              href="#"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3">
+                insert_chart </span
+              >Dashboard
+            </a>
+          </li>
+
+          <li class="mb-4">
+            <a
+              href="#"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3"> forum </span
+              >Question
+            </a>
+          </li>
+
+          <li class="mb-4 active-link">
+            <a
+              href="./index.html"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3">
+                assignment </span
+              >Assignment
+            </a>
+          </li>
+
+          <li class="mb-4">
+            <a
+              href="#"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3">
+                video_library </span
+              >Course
+            </a>
+          </li>
+
+          <li class="mb-4">
+            <a
+              href="./admin.html"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3"> group </span
+              >Admin</a
+            >
+          </li>
+          <li class="mb-4">
+            <a
+              href="#"
+              class="text-decoration-none text-black link-success ps-32 fw-bold d-flex"
+            >
+              <span class="material-icons d-inline-block me-3"> settings </span
+              >Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="card mb-5 bg-transparent border-0 ps-5 flex-row gap-3 align-items-center"
+      >
+        <img
+          src="./assets/images/andychen.jpeg"
+          alt="A picture of Andy"
+          class="img-fluid profile-picture"
+        />
+        <div>
+          <p class="mb-0 fw-bold">Andy Chen</p>
+          <p class="mb-0 text-gray-600">andy0401@mail.com</p>
+        </div>
+      </div>
+    </nav>
+    <main class="col-9 p-0 mb-4">
+      <!-- header -->
+      <section class="d-flex align-items-center justify-content-between p-32px">
+        <div class="d-flex">
+          <h4 class="fw-bold mb-0">Assignment</h4>
+          <div class="dropdown">
+            <button
+              class="fw-bold ms-50px btn border-0 d-flex align-items-center"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All Courses<span class="material-icons ms-9px text-success">
+                expand_more
+              </span>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
+                <li><a class="dropdown-item" href="#">React</a></li>
+              </ul>
+            </button>
+          </div>
+        </div>
+        <div>
+          <button class="btn border-0 p-0 me-4" type="button">
+            <span class="material-icons">search </span>
+          </button>
+          <button class="btn border-0 p-0" type="button">
+            <span class="material-icons">notifications_active </span>
+          </button>
+        </div>
+      </section>
+      <!-- content -->
+      <section class="px-32px">
+        <div class="row">
+          <div class="col-4">
+            <div class="dropdown">
+              <button
+                class="fw-bold p-0 btn border-0 d-flex"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                All(4)
+                <span class="material-icons ms-9px text-success">
+                  expand_more
+                </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Chapter Assignment 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Chapter Assignment 2</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+              </ul>
+            </div>
+            <ul class="list-group border border-1 border-gray-400">
+              <li
+                class="list-group-item p-12px bg-gray-100 list-group-item-action"
+                aria-current="true"
+              >
+                <button role="button" class="btn border-0 p-0 w-100">
+                  <h6 class="d-flex justify-content-between fs-12px mb-1">
+                    Chapter Assignment 2 <span>4 hrs ago</span>
+                  </h6>
+                  <p
+                    class="mb-0 d-flex justify-content-between align-items-end"
+                  >
+                    Please check this file...
+                    <span class="text-gray-600 fs-12px">Emily Wang</span>
+                  </p>
+                </button>
+              </li>
+              <li class="list-group-item p-12px list-group-item-action">
+                <button role="button" class="btn border-0 p-0 w-100">
+                  <h6 class="d-flex justify-content-between fs-12px mb-1">
+                    Chapter Assignment 1 <span>12 hrs ago</span>
+                  </h6>
+                  <p
+                    class="mb-0 d-flex justify-content-between align-items-end"
+                  >
+                    My Homework
+                    <span class="text-gray-600 fs-12px">David Xu</span>
+                  </p>
+                </button>
+              </li>
+              <li class="list-group-item p-12px list-group-item-action">
+                <button role="button" class="btn border-0 p-0 w-100">
+                  <h6 class="d-flex justify-content-between fs-12px mb-1">
+                    Final Assignment <span>18 hrs ago</span>
+                  </h6>
+                  <p
+                    class="mb-0 d-flex justify-content-between align-items-end"
+                  >
+                    Have a problem with this...
+                    <span class="text-gray-600 fs-12px">Tony Wei</span>
+                  </p>
+                </button>
+              </li>
+              <li class="list-group-item p-12px list-group-item-action">
+                <button role="button" class="btn border-0 p-0 w-100">
+                  <h6 class="d-flex justify-content-between fs-12px mb-1">
+                    Final Assignment <span>19 hrs ago</span>
+                  </h6>
+                  <p
+                    class="mb-0 d-flex justify-content-between align-items-end"
+                  >
+                    Do I do it right?
+                    <span class="text-gray-600 fs-12px">Christian Lin</span>
+                  </p>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <p class="text-gray-600 text-end mb-2 fs-12px">2 comments</p>
+            <div class="card mb-3">
+              <h6 class="card-header py-12px position-relative">
+                <div class="mb-1 fs-12px">Chapter Assignment 2 / HTML&CSS</div>
+                <div class="fw-bold">
+                  Please check this file for me, thanks!
+                </div>
+                <button
+                  class="me-3 position-absolute top-50 end-0 translate-middle-y p-0 border-0 bg-transparent"
+                >
+                  <span class="material-icons"> more_vert </span>
+                </button>
+              </h6>
+              <div class="card-body d-flex gap-2">
+                <img
+                  class="img-fliud profile-picture col-1"
+                  src="./assets/images/emilywang.jpeg"
+                  alt="A picture of Emily"
+                />
+                <div class="border-bottom border-1 border-gray-400 pb-3">
+                  <h6 class="card-title fw-bold mb-1">Emily Wang</h6>
+                  <p class="text-gray-600 fs-12px">10:28 AM (4 hours ago)</p>
+                  <p class="card-text">
+                    Hi Teacher, the attached file is my homework of chapter 2.
+                    And here comes a question: Why in the following code the
+                    height of the <code>div</code> is bigger than the height of
+                    the
+                    <code>img</code>
+                    ? There is a gap below the image, but it doesn’t seems to be
+                    a padding/margin.<br/ > What is the gap or extra space below
+                    image?
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg-light border-0"
+                    download="HW-2-Emily.zip"
+                  >
+                    <div class="d-flex fw-bold">
+                      <span class="material-icons me-2"> attach_file </span
+                      >HW-2-Emily.zip
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-header py-12px d-flex align-items-center gap-4">
+                <div class="dropdown">
+                  <button
+                    class="fw-bold btn border-0 d-flex align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Body Text<span class="material-icons ms-9px text-success">
+                      expand_more
+                    </span>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">用Bootstrap</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">有點給他痛苦喔</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">^____^</a></li>
+                    </ul>
+                  </button>
+                </div>
+                <span class="material-icons"> format_bold </span>
+                <span class="material-icons"> format_italic </span>
+                <span class="material-icons"> format_list_bulleted </span>
+                <span class="material-icons"> format_list_numbered </span>
+                <span class="material-icons"> image </span>
+                <span class="material-icons"> link </span>
+                <span class="material-icons"> code </span>
+              </div>
+              <div class="card-body pb-0">
+                <div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control border-0 h-250px"
+                      placeholder="Replay an answer..."
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea">Replay an answer...</label>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 my-3 justify-content-end">
+                  <a href="./index.html" class="btn btn-outline-success px-5"
+                    >Cancel</a
+                  >
+                  <button class="btn btn-success px-5">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<!-- 20/1/36.5 -->
+<!-- 40/2/73 -->

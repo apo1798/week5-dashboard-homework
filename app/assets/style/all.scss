@@ -1,1 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
 @import './layout/_index.scss';
+
+* {
+  font-family: Lato, 'Roboto Mono';
+}
+
+// .material-icons {
+//   vertical-align: middle;
+//   display: inline-block;
+// }
+
+$gray-palette: (
+  'gray-100': #f8f9fa,
+  'gray-200': #e9ecef,
+  'gray-300': #dee2e6,
+  'gray-400': #ced4da,
+  'gray-500': #adb5bd,
+  'gray-600': #6c757d,
+  'gray-700': #495057,
+  'gray-800': #343a40,
+  'gray-900': #212529,
+);
+
+@each $key, $val in $gray-palette {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  .border-#{$key} {
+    border-color: $val;
+  }
+}
+
+a {
+  display: inline-block;
+}
+
+.p-12px {
+  padding: 12px;
+}
+
+.py-12px {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.p-32px {
+  padding: 32px;
+}
+
+.px-32px {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.h-250px {
+  height: 250px !important;
+}
+
+.ms-9px {
+  margin-left: 9px;
+}
+
+.ms-50px {
+  margin-left: 50px;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+code {
+  color: #198754;
+}
+
+textarea {
+  resize: none;
+}
+
+.active-link {
+  position: relative;
+  &::before {
+    content: '';
+    background-color: #198754;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    width: 4px;
+  }
+}
+
+.profile-picture {
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.material-icons {
+  transition: all 100ms ease-in-out;
+  &:hover {
+    color: rgb(28, 176, 255);
+  }
+}
+
+.table-head-icon {
+  font-size: 12px;
+}
