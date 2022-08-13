@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+* {
+  font-family: Lato, 'Roboto Mono';
+}
+
+.text-gray-100 {
+  color: #f8f9fa;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.border-gray-100 {
+  border-color: #f8f9fa;
+}
+
+.text-gray-200 {
+  color: #e9ecef;
+}
+
+.bg-gray-200 {
+  background-color: #e9ecef;
+}
+
+.border-gray-200 {
+  border-color: #e9ecef;
+}
+
+.text-gray-300 {
+  color: #dee2e6;
+}
+
+.bg-gray-300 {
+  background-color: #dee2e6;
+}
+
+.border-gray-300 {
+  border-color: #dee2e6;
+}
+
+.text-gray-400 {
+  color: #ced4da;
+}
+
+.bg-gray-400 {
+  background-color: #ced4da;
+}
+
+.border-gray-400 {
+  border-color: #ced4da;
+}
+
+.text-gray-500 {
+  color: #adb5bd;
+}
+
+.bg-gray-500 {
+  background-color: #adb5bd;
+}
+
+.border-gray-500 {
+  border-color: #adb5bd;
+}
+
+.text-gray-600 {
+  color: #6c757d;
+}
+
+.bg-gray-600 {
+  background-color: #6c757d;
+}
+
+.border-gray-600 {
+  border-color: #6c757d;
+}
+
+.text-gray-700 {
+  color: #495057;
+}
+
+.bg-gray-700 {
+  background-color: #495057;
+}
+
+.border-gray-700 {
+  border-color: #495057;
+}
+
+.text-gray-800 {
+  color: #343a40;
+}
+
+.bg-gray-800 {
+  background-color: #343a40;
+}
+
+.border-gray-800 {
+  border-color: #343a40;
+}
+
+.text-gray-900 {
+  color: #212529;
+}
+
+.bg-gray-900 {
+  background-color: #212529;
+}
+
+.border-gray-900 {
+  border-color: #212529;
+}
+
+a {
+  display: inline-block;
+}
+
+.p-12px {
+  padding: 12px;
+}
+
+.py-12px {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.p-32px {
+  padding: 32px;
+}
+
+.px-32px {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.h-250px {
+  height: 250px !important;
+}
+
+.ms-9px {
+  margin-left: 9px;
+}
+
+.ms-50px {
+  margin-left: 50px;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+code {
+  color: #198754;
+}
+
+textarea {
+  resize: none;
+}
+
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: '';
+  background-color: #198754;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  width: 4px;
+}
+
+.profile-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.material-icons {
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.material-icons:hover {
+  color: #1cb0ff;
+}
+
+.table-head-icon {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=all.css.map */
