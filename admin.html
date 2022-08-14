@@ -157,14 +157,14 @@
                     <h6 class="mb-1">Name</h6>
                     <input
                       type="text"
-                      class="form-control bg-gray-100 border-0"
+                      class="form-control border-gray-900 border-1"
                     />
                   </div>
                   <div class="mb-3">
                     <h6 class="mb-1">Email</h6>
                     <input
                       type="text"
-                      class="form-control bg-gray-100 border-0"
+                      class="form-control border-gray-900 border-1"
                     />
                   </div>
                 </div>
@@ -180,7 +180,7 @@
                     Send Verification Mail
                   </button>
                 </div>
-                <div class="border-bottom border-1 border-gray-300 pb-2 mb-4">
+                <div class="border-bottom pb-2 mb-4">
                   <h5 class="mb-3 fw-bold">Access Level</h5>
                   <div class="dropdown mb-3">
                     <button
@@ -267,18 +267,6 @@
                     </label>
                   </div>
                 </div>
-                <div class="pb-2">
-                  <h5 class="mb-3 fw-bold">Deactivate Account</h5>
-                  <p class="d-flex gap-2 text-danger">
-                    <span class="material-icons text-danger">warning</span>This
-                    cannot be undone!
-                  </p>
-                  <button
-                    class="btn btn-outline-danger fw-bold py-3 w-100 border-danger"
-                  >
-                    Deactivate This Account
-                  </button>
-                </div>
               </div>
               <div class="modal-footer border-top-0 p-3">
                 <button
@@ -329,14 +317,285 @@
               <td>emir.wicks@mail.com</td>
               <td>Yes</td>
               <td class="text-end">
-                <button class="btn border-0 me-4 p-0 d-inline-block">
+                <button
+                  type="button"
+                  class="btn border-0 me-4 p-0 d-inline-block"
+                  data-bs-toggle="modal"
+                  data-bs-target="#viewModal"
+                >
                   <span class="material-icons"> visibility </span>
                 </button>
-                <button class="btn border-0 p-0 d-inline-block">
+                <button
+                  type="button"
+                  class="btn border-0 p-0 d-inline-block"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editModal"
+                >
                   <span class="material-icons"> edit </span>
                 </button>
-                <!-- <span class="material-icons"> edit </span> -->
               </td>
+              <div
+                class="modal fade"
+                id="viewModal"
+                tabindex="-1"
+                aria-labelledby="viewModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content p-4 d-flex flex-row">
+                    <img
+                      src="./assets/images/emir.jpeg"
+                      alt="A phote of Emir"
+                      class="img-fluid view-modal-picture"
+                    />
+
+                    <div
+                      class="modal-body py-0 pe-0 ps-4 position-relative text-gray-900"
+                    >
+                      <p class="mb-2">#1</p>
+                      <button
+                        type="button"
+                        class="text-black bg-transparent border-0 d-flex position-absolute top-0 end-0"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span class="material-icons"> close </span>
+                      </button>
+                      <p class="mb-0">Admin</p>
+                      <h6 class="h4 fw-bold mb-2">Emir Wicks</h6>
+                      <address>
+                        <a
+                          href="mailto:emir.wicks@mail.com"
+                          class="text-gray-600 text-decoration-none"
+                          >emir.wicks@mail.com</a
+                        >
+                      </address>
+                      <div>
+                        <button
+                          class="btn border-0 d-flex justify-content-between w-100 profile-view-more collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#profile-view-more"
+                          aria-expanded="false"
+                          aria-controls="profile-view-more"
+                        >
+                          Verified
+                          <span class="material-icons text-success expand-more">
+                            expand_more
+                          </span>
+                        </button>
+                        <div
+                          class="collapse border-top-0 p-3"
+                          id="profile-view-more"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-outline-danger px-4 py-2 me-2"
+                            data-bs-dismiss="modal"
+                          >
+                            Deactivate
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-success px-4 py-2"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal fade"
+                id="editModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header p-4">
+                      <h5 class="modal-title fw-bold" id="exampleModalLabel">
+                        Edit Admin
+                      </h5>
+                      <button
+                        type="button"
+                        class="text-black bg-transparent border-0 d-flex"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span class="material-icons"> close </span>
+                      </button>
+                    </div>
+                    <div class="modal-body p-32px pt-3">
+                      <div
+                        class="border-bottom border-1 border-gray-300 pb-2 mb-4"
+                      >
+                        <h5 class="mb-3 fw-bold">Account</h5>
+                        <div class="mb-3">
+                          <h6 class="mb-1">Name</h6>
+                          <input
+                            type="text"
+                            class="form-control bg-gray-100 border-0 p-3"
+                            value="Emir Wicks"
+                            readonly
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <h6 class="mb-1">Email</h6>
+                          <input
+                            type="text"
+                            class="form-control bg-gray-100 border-0 p-3"
+                            value="emir.wicks@mail.com"
+                            readonly
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="border-bottom border-1 border-gray-300 pb-2 mb-4"
+                      >
+                        <h5 class="mb-3">Verification</h5>
+                        <p class="fw-bold d-flex gap-2">
+                          <span class="material-icons text-success"
+                            >check_circle</span
+                          >
+                          <span class="flex-grow-1"> Verified </span>
+                          <span class="fs-14px text-gray-900 fw-normal"
+                            >2020/4/12</span
+                          >
+                        </p>
+                        <button
+                          class="btn fw-bold py-3 w-100 border-gray-400 mb-3"
+                          disabled
+                        >
+                          Send Verification Mail
+                        </button>
+                      </div>
+                      <div
+                        class="border-bottom border-1 border-gray-300 pb-2 mb-4"
+                      >
+                        <h5 class="mb-3 fw-bold">Access Level</h5>
+                        <div class="dropdown mb-3">
+                          <button
+                            class="btn btn-black border-1 border-dark w-100 d-flex justify-content-between p-3"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Admin
+                            <span class="material-icons ms-9px text-dark">
+                              expand_more
+                            </span>
+                          </button>
+                          <ul
+                            class="dropdown-menu w-100 fw-bold"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Admin</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Member action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Observer</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="border-bottom border-1 border-gray-300 pb-2 mb-4"
+                      >
+                        <h5 class="mb-3 fw-bold">Custom Access</h5>
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input border-2"
+                            type="checkbox"
+                            value="lecture"
+                            id="lecture"
+                          />
+                          <label class="form-check-label" for="lecture">
+                            Lecture
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="coupon"
+                            id="coupon"
+                            checked
+                          />
+                          <label class="form-check-label" for="coupon">
+                            Coupon
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="message"
+                            id="message"
+                          />
+                          <label class="form-check-label" for="message">
+                            Message
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="setting"
+                            id="setting"
+                          />
+                          <label class="form-check-label" for="setting">
+                            Setting
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="task_menu"
+                            id="task_menu"
+                          />
+                          <label class="form-check-label" for="task_menu">
+                            Task Menu
+                          </label>
+                        </div>
+                      </div>
+                      <div class="pb-2">
+                        <h5 class="mb-3 fw-bold">Deactivate Account</h5>
+                        <p class="d-flex gap-2 text-danger">
+                          <span class="material-icons text-danger">warning</span
+                          >This cannot be undone!
+                        </p>
+                        <button
+                          class="btn btn-outline-danger fw-bold py-3 w-100 border-danger"
+                        >
+                          Deactivate This Account
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-top-0 p-3">
+                      <button
+                        type="button"
+                        class="btn btn-outline-success px-4 py-2"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-success px-4 py-2">
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </tr>
             <tr>
               <td>#2</td>
@@ -506,6 +765,173 @@
 </div>
 <!-- 20/1/36.5 -->
 <!-- 40/2/73 -->
+<!--  <div
+          class="modal fade"
+          id="addNewModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header p-4">
+                <h5 class="modal-title fw-bold" id="exampleModalLabel">
+                  New Admin
+                </h5>
+                <button
+                  type="button"
+                  class="text-black bg-transparent border-0 d-flex"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="material-icons"> close </span>
+                </button>
+              </div>
+              <div class="modal-body p-32px pt-3">
+                <div class="border-bottom border-1 border-gray-300 pb-2 mb-4">
+                  <h5 class="mb-3 fw-bold">Account</h5>
+                  <div class="mb-3">
+                    <h6 class="mb-1">Name</h6>
+                    <input
+                      type="text"
+                      class="form-control bg-gray-100 border-0"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <h6 class="mb-1">Email</h6>
+                    <input
+                      type="text"
+                      class="form-control bg-gray-100 border-0"
+                    />
+                  </div>
+                </div>
+                <div class="border-bottom border-1 border-gray-300 pb-2 mb-4">
+                  <h5 class="mb-3">Verification</h5>
+                  <p class="fw-bold d-flex gap-2">
+                    <span class="material-icons text-danger">warning</span
+                    >Unverified
+                  </p>
+                  <button
+                    class="btn btn-outline-success fw-bold py-3 w-100 border-gray-400 mb-3"
+                  >
+                    Send Verification Mail
+                  </button>
+                </div>
+                <div class="border-bottom border-1 border-gray-300 pb-2 mb-4">
+                  <h5 class="mb-3 fw-bold">Access Level</h5>
+                  <div class="dropdown mb-3">
+                    <button
+                      class="btn btn-black border-1 border-dark w-100 d-flex justify-content-between p-3 text-gray-600"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      -Choose an access level-
+                      <span class="material-icons ms-9px text-dark">
+                        expand_more
+                      </span>
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100 fw-bold"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Admin</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Member action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Observer</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-bottom border-1 border-gray-300 pb-2 mb-4">
+                  <h5 class="mb-3 fw-bold">Custom Access</h5>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input border-2"
+                      type="checkbox"
+                      value="lecture"
+                      id="lecture"
+                    />
+                    <label class="form-check-label" for="lecture">
+                      Lecture
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="coupon"
+                      id="coupon"
+                      checked
+                    />
+                    <label class="form-check-label" for="coupon">
+                      Coupon
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="message"
+                      id="message"
+                    />
+                    <label class="form-check-label" for="message">
+                      Message
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="setting"
+                      id="setting"
+                    />
+                    <label class="form-check-label" for="setting">
+                      Setting
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="task_menu"
+                      id="task_menu"
+                    />
+                    <label class="form-check-label" for="task_menu">
+                      Task Menu
+                    </label>
+                  </div>
+                </div>
+                <div class="pb-2">
+                  <h5 class="mb-3 fw-bold">Deactivate Account</h5>
+                  <p class="d-flex gap-2 text-danger">
+                    <span class="material-icons text-danger">warning</span>This
+                    cannot be undone!
+                  </p>
+                  <button
+                    class="btn btn-outline-danger fw-bold py-3 w-100 border-danger"
+                  >
+                    Deactivate This Account
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 p-3">
+                <button
+                  type="button"
+                  class="btn btn-outline-success px-4 py-2"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="button" class="btn btn-success px-4 py-2">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
 
     <script src="./assets/js/vendors.js"></script>

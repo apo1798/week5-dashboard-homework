@@ -15,6 +15,11 @@
   border-color: #f8f9fa;
 }
 
+.btn-outline-gray-100 {
+  color: #f8f9fa;
+  border: #f8f9fa;
+}
+
 .text-gray-200 {
   color: #e9ecef;
 }
@@ -25,6 +30,11 @@
 
 .border-gray-200 {
   border-color: #e9ecef;
+}
+
+.btn-outline-gray-200 {
+  color: #e9ecef;
+  border: #e9ecef;
 }
 
 .text-gray-300 {
@@ -39,6 +49,11 @@
   border-color: #dee2e6;
 }
 
+.btn-outline-gray-300 {
+  color: #dee2e6;
+  border: #dee2e6;
+}
+
 .text-gray-400 {
   color: #ced4da;
 }
@@ -49,6 +64,11 @@
 
 .border-gray-400 {
   border-color: #ced4da;
+}
+
+.btn-outline-gray-400 {
+  color: #ced4da;
+  border: #ced4da;
 }
 
 .text-gray-500 {
@@ -63,6 +83,11 @@
   border-color: #adb5bd;
 }
 
+.btn-outline-gray-500 {
+  color: #adb5bd;
+  border: #adb5bd;
+}
+
 .text-gray-600 {
   color: #6c757d;
 }
@@ -73,6 +98,11 @@
 
 .border-gray-600 {
   border-color: #6c757d;
+}
+
+.btn-outline-gray-600 {
+  color: #6c757d;
+  border: #6c757d;
 }
 
 .text-gray-700 {
@@ -87,6 +117,11 @@
   border-color: #495057;
 }
 
+.btn-outline-gray-700 {
+  color: #495057;
+  border: #495057;
+}
+
 .text-gray-800 {
   color: #343a40;
 }
@@ -99,6 +134,11 @@
   border-color: #343a40;
 }
 
+.btn-outline-gray-800 {
+  color: #343a40;
+  border: #343a40;
+}
+
 .text-gray-900 {
   color: #212529;
 }
@@ -109,6 +149,11 @@
 
 .border-gray-900 {
   border-color: #212529;
+}
+
+.btn-outline-gray-900 {
+  color: #212529;
+  border: #212529;
 }
 
 a {
@@ -149,8 +194,13 @@ a {
   font-size: 12px;
 }
 
+.fs-14px {
+  font-size: 14px;
+}
+
 code {
   color: #198754;
+  background-color: #f8f9fa;
 }
 
 textarea {
@@ -187,10 +237,33 @@ textarea {
 
 .material-icons:hover {
   color: #1cb0ff;
+  cursor: pointer;
 }
 
 .table-head-icon {
   font-size: 12px;
+}
+
+.view-modal-picture {
+  width: 141px;
+  height: 141px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-view-more.collapsed .expand-more {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.profile-view-more .expand-more {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=all.css.map */
