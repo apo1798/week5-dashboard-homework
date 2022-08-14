@@ -33,6 +33,10 @@ $gray-palette: (
   .border-#{$key} {
     border-color: $val;
   }
+  .btn-outline-#{$key} {
+    color: $val;
+    border: $val;
+  }
 }
 
 a {
@@ -73,8 +77,13 @@ a {
   font-size: 12px;
 }
 
+.fs-14px {
+  font-size: 14px;
+}
+
 code {
   color: #198754;
+  background-color: #f8f9fa;
 }
 
 textarea {
@@ -105,9 +114,27 @@ textarea {
   transition: all 100ms ease-in-out;
   &:hover {
     color: rgb(28, 176, 255);
+    cursor: pointer;
   }
 }
 
 .table-head-icon {
   font-size: 12px;
+}
+
+.view-modal-picture {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+}
+
+.profile-view-more {
+  &.collapsed .expand-more {
+    transform: rotate(0deg);
+    transition: all 1s ease-in-out;
+  }
+
+  & .expand-more {
+    transform: rotate(180deg);
+  }
 }
